@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DF6C4C32B91421400A9C039 /* FlightRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6C4C22B91421400A9C039 /* FlightRow.swift */; };
+		0DF6C4C52B9245C500A9C039 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6C4C42B9245C500A9C039 /* SplashView.swift */; };
+		0DF6C4C72B93DBBD00A9C039 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6C4C62B93DBBD00A9C039 /* Airline.swift */; };
+		0DF6C4C92B93EB4200A9C039 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6C4C82B93EB4200A9C039 /* Airport.swift */; };
+		0DF6C4CD2B93F92700A9C039 /* FlightDetailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6C4CC2B93F92700A9C039 /* FlightDetailCardView.swift */; };
+		0DF6C4CF2B9414D200A9C039 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6C4CE2B9414D200A9C039 /* MapView.swift */; };
+		0DF6C4D32B942CC400A9C039 /* CurvedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6C4D22B942CC400A9C039 /* CurvedLine.swift */; };
+		0DF6C4D92B9435B100A9C039 /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6C4D82B9435B000A9C039 /* CustomMapView.swift */; };
+		0DF6C4DC2B95497000A9C039 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF6C4DB2B95497000A9C039 /* Launch Screen.storyboard */; };
+		288F35D22B8CEF5200E6E8A1 /* GoodTripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F35D12B8CEF5200E6E8A1 /* GoodTripApp.swift */; };
+		288F35D42B8CEF5200E6E8A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F35D32B8CEF5200E6E8A1 /* ContentView.swift */; };
+		288F35D62B8CEF5300E6E8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288F35D52B8CEF5300E6E8A1 /* Assets.xcassets */; };
+		288F35D92B8CEF5300E6E8A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288F35D82B8CEF5300E6E8A1 /* Preview Assets.xcassets */; };
+		289E446F2B8CFF5300ABC5E9 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E446E2B8CFF5300ABC5E9 /* Flight.swift */; };
+		289E44712B8CFF6100ABC5E9 /* FlightClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E44702B8CFF6100ABC5E9 /* FlightClient.swift */; };
+		289E44732B8CFF6E00ABC5E9 /* FlightTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E44722B8CFF6E00ABC5E9 /* FlightTabView.swift */; };
+		289E44752B8CFF7600ABC5E9 /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E44742B8CFF7600ABC5E9 /* FlightDetailView.swift */; };
+		289E44792B8D09DE00ABC5E9 /* SearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E44782B8D09DE00ABC5E9 /* SearchMainView.swift */; };
+		289E447B2B8D0A7C00ABC5E9 /* SearchByFlightNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E447A2B8D0A7C00ABC5E9 /* SearchByFlightNumberView.swift */; };
+		289E447D2B8D0B0100ABC5E9 /* SearchByDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E447C2B8D0B0100ABC5E9 /* SearchByDateView.swift */; };
+		289E447F2B8D0D0600ABC5E9 /* AgendaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E447E2B8D0D0600ABC5E9 /* AgendaView.swift */; };
+		28EF9A582B98149E0089F914 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF9A572B98149E0089F914 /* Notification.swift */; };
+		28EF9A5A2B98269F0089F914 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF9A592B98269F0089F914 /* NetworkMonitor.swift */; };
+		28EF9A5C2B9834310089F914 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF9A5B2B9834310089F914 /* Profile.swift */; };
+		28EF9A602B9834940089F914 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF9A5F2B9834940089F914 /* ProfileHost.swift */; };
+		28EF9A622B9835EE0089F914 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF9A612B9835EE0089F914 /* ProfileSummary.swift */; };
+		28EF9A662B9860910089F914 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28EF9A652B9860910089F914 /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DF6C4C22B91421400A9C039 /* FlightRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRow.swift; sourceTree = "<group>"; };
+		0DF6C4C42B9245C500A9C039 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		0DF6C4C62B93DBBD00A9C039 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		0DF6C4C82B93EB4200A9C039 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		0DF6C4CC2B93F92700A9C039 /* FlightDetailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailCardView.swift; sourceTree = "<group>"; };
+		0DF6C4CE2B9414D200A9C039 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0DF6C4D22B942CC400A9C039 /* CurvedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedLine.swift; sourceTree = "<group>"; };
+		0DF6C4D82B9435B000A9C039 /* CustomMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		0DF6C4DA2B95494B00A9C039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0DF6C4DB2B95497000A9C039 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		288F35CE2B8CEF5200E6E8A1 /* GoodTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		288F35D12B8CEF5200E6E8A1 /* GoodTripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodTripApp.swift; sourceTree = "<group>"; };
+		288F35D32B8CEF5200E6E8A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		288F35D52B8CEF5300E6E8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		288F35D82B8CEF5300E6E8A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		289E446E2B8CFF5300ABC5E9 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		289E44702B8CFF6100ABC5E9 /* FlightClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightClient.swift; sourceTree = "<group>"; };
+		289E44722B8CFF6E00ABC5E9 /* FlightTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTabView.swift; sourceTree = "<group>"; };
+		289E44742B8CFF7600ABC5E9 /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
+		289E44782B8D09DE00ABC5E9 /* SearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMainView.swift; sourceTree = "<group>"; };
+		289E447A2B8D0A7C00ABC5E9 /* SearchByFlightNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByFlightNumberView.swift; sourceTree = "<group>"; };
+		289E447C2B8D0B0100ABC5E9 /* SearchByDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByDateView.swift; sourceTree = "<group>"; };
+		289E447E2B8D0D0600ABC5E9 /* AgendaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaView.swift; sourceTree = "<group>"; };
+		28EF9A572B98149E0089F914 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		28EF9A592B98269F0089F914 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		28EF9A5B2B9834310089F914 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		28EF9A5F2B9834940089F914 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		28EF9A612B9835EE0089F914 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		28EF9A652B9860910089F914 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		288F35CB2B8CEF5200E6E8A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		288F35C52B8CEF5200E6E8A1 = {
+			isa = PBXGroup;
+			children = (
+				28EF9A652B9860910089F914 /* Settings.bundle */,
+				0DF6C4DB2B95497000A9C039 /* Launch Screen.storyboard */,
+				288F35D02B8CEF5200E6E8A1 /* GoodTrip */,
+				288F35CF2B8CEF5200E6E8A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		288F35CF2B8CEF5200E6E8A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				288F35CE2B8CEF5200E6E8A1 /* GoodTrip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		288F35D02B8CEF5200E6E8A1 /* GoodTrip */ = {
+			isa = PBXGroup;
+			children = (
+				0DF6C4DA2B95494B00A9C039 /* Info.plist */,
+				288F35D12B8CEF5200E6E8A1 /* GoodTripApp.swift */,
+				288F35D32B8CEF5200E6E8A1 /* ContentView.swift */,
+				289E44762B8CFFEB00ABC5E9 /* Model */,
+				289E44772B8CFFF700ABC5E9 /* Views */,
+				288F35D52B8CEF5300E6E8A1 /* Assets.xcassets */,
+				288F35D72B8CEF5300E6E8A1 /* Preview Content */,
+			);
+			path = GoodTrip;
+			sourceTree = "<group>";
+		};
+		288F35D72B8CEF5300E6E8A1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				288F35D82B8CEF5300E6E8A1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		289E44762B8CFFEB00ABC5E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				289E446E2B8CFF5300ABC5E9 /* Flight.swift */,
+				289E44702B8CFF6100ABC5E9 /* FlightClient.swift */,
+				0DF6C4D22B942CC400A9C039 /* CurvedLine.swift */,
+				0DF6C4D82B9435B000A9C039 /* CustomMapView.swift */,
+				0DF6C4C62B93DBBD00A9C039 /* Airline.swift */,
+				0DF6C4C82B93EB4200A9C039 /* Airport.swift */,
+				28EF9A572B98149E0089F914 /* Notification.swift */,
+				28EF9A592B98269F0089F914 /* NetworkMonitor.swift */,
+				28EF9A5B2B9834310089F914 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		289E44772B8CFFF700ABC5E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				289E44722B8CFF6E00ABC5E9 /* FlightTabView.swift */,
+				0DF6C4C22B91421400A9C039 /* FlightRow.swift */,
+				289E44782B8D09DE00ABC5E9 /* SearchMainView.swift */,
+				289E447A2B8D0A7C00ABC5E9 /* SearchByFlightNumberView.swift */,
+				289E447C2B8D0B0100ABC5E9 /* SearchByDateView.swift */,
+				289E44742B8CFF7600ABC5E9 /* FlightDetailView.swift */,
+				0DF6C4CC2B93F92700A9C039 /* FlightDetailCardView.swift */,
+				0DF6C4CE2B9414D200A9C039 /* MapView.swift */,
+				289E447E2B8D0D0600ABC5E9 /* AgendaView.swift */,
+				0DF6C4C42B9245C500A9C039 /* SplashView.swift */,
+				28EF9A5F2B9834940089F914 /* ProfileHost.swift */,
+				28EF9A612B9835EE0089F914 /* ProfileSummary.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		288F35CD2B8CEF5200E6E8A1 /* GoodTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288F35DC2B8CEF5300E6E8A1 /* Build configuration list for PBXNativeTarget "GoodTrip" */;
+			buildPhases = (
+				288F35CA2B8CEF5200E6E8A1 /* Sources */,
+				288F35CB2B8CEF5200E6E8A1 /* Frameworks */,
+				288F35CC2B8CEF5200E6E8A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodTrip;
+			productName = GoodTrip;
+			productReference = 288F35CE2B8CEF5200E6E8A1 /* GoodTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		288F35C62B8CEF5200E6E8A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					288F35CD2B8CEF5200E6E8A1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 288F35C92B8CEF5200E6E8A1 /* Build configuration list for PBXProject "GoodTrip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 288F35C52B8CEF5200E6E8A1;
+			productRefGroup = 288F35CF2B8CEF5200E6E8A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				288F35CD2B8CEF5200E6E8A1 /* GoodTrip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		288F35CC2B8CEF5200E6E8A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EF9A662B9860910089F914 /* Settings.bundle in Resources */,
+				0DF6C4DC2B95497000A9C039 /* Launch Screen.storyboard in Resources */,
+				288F35D92B8CEF5300E6E8A1 /* Preview Assets.xcassets in Resources */,
+				288F35D62B8CEF5300E6E8A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		288F35CA2B8CEF5200E6E8A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				289E446F2B8CFF5300ABC5E9 /* Flight.swift in Sources */,
+				0DF6C4CF2B9414D200A9C039 /* MapView.swift in Sources */,
+				288F35D42B8CEF5200E6E8A1 /* ContentView.swift in Sources */,
+				289E44732B8CFF6E00ABC5E9 /* FlightTabView.swift in Sources */,
+				0DF6C4C92B93EB4200A9C039 /* Airport.swift in Sources */,
+				0DF6C4D32B942CC400A9C039 /* CurvedLine.swift in Sources */,
+				0DF6C4D92B9435B100A9C039 /* CustomMapView.swift in Sources */,
+				289E44712B8CFF6100ABC5E9 /* FlightClient.swift in Sources */,
+				0DF6C4C72B93DBBD00A9C039 /* Airline.swift in Sources */,
+				289E447B2B8D0A7C00ABC5E9 /* SearchByFlightNumberView.swift in Sources */,
+				28EF9A5C2B9834310089F914 /* Profile.swift in Sources */,
+				28EF9A622B9835EE0089F914 /* ProfileSummary.swift in Sources */,
+				0DF6C4CD2B93F92700A9C039 /* FlightDetailCardView.swift in Sources */,
+				0DF6C4C52B9245C500A9C039 /* SplashView.swift in Sources */,
+				28EF9A582B98149E0089F914 /* Notification.swift in Sources */,
+				288F35D22B8CEF5200E6E8A1 /* GoodTripApp.swift in Sources */,
+				0DF6C4C32B91421400A9C039 /* FlightRow.swift in Sources */,
+				289E447F2B8D0D0600ABC5E9 /* AgendaView.swift in Sources */,
+				289E44752B8CFF7600ABC5E9 /* FlightDetailView.swift in Sources */,
+				28EF9A5A2B98269F0089F914 /* NetworkMonitor.swift in Sources */,
+				289E44792B8D09DE00ABC5E9 /* SearchMainView.swift in Sources */,
+				289E447D2B8D0B0100ABC5E9 /* SearchByDateView.swift in Sources */,
+				28EF9A602B9834940089F914 /* ProfileHost.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		288F35DA2B8CEF5300E6E8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		288F35DB2B8CEF5300E6E8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		288F35DD2B8CEF5300E6E8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodTrip/Preview Content\"";
+				DEVELOPMENT_TEAM = E82W679D33;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodTrip/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GoodTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		288F35DE2B8CEF5300E6E8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodTrip/Preview Content\"";
+				DEVELOPMENT_TEAM = E82W679D33;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodTrip/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GoodTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		288F35C92B8CEF5200E6E8A1 /* Build configuration list for PBXProject "GoodTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288F35DA2B8CEF5300E6E8A1 /* Debug */,
+				288F35DB2B8CEF5300E6E8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288F35DC2B8CEF5300E6E8A1 /* Build configuration list for PBXNativeTarget "GoodTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288F35DD2B8CEF5300E6E8A1 /* Debug */,
+				288F35DE2B8CEF5300E6E8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 288F35C62B8CEF5200E6E8A1 /* Project object */;
+}
